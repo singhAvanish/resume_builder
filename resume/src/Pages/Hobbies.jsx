@@ -1,7 +1,7 @@
 import { PDFDocument, rgb } from 'pdf-lib';
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Navigate, useLocation, useNavigate} from 'react-router-dom';
+import { useLocation, useNavigate} from 'react-router-dom';
 import "./css/hobby.css";
 
 const Hobbies = () => {
@@ -28,7 +28,7 @@ const Hobbies = () => {
   // Function to handle PDF modification and save
   const handleAddHobbiesToPDF = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/public/resume.pdf', {
+      const response = await axios.get('https://resume-builder-r4hm.onrender.com/public/resume.pdf', {
         responseType: 'arraybuffer',
       });
       const existingPdfBytes = response.data;
@@ -98,12 +98,12 @@ const Hobbies = () => {
       const formData = new FormData();
       formData.append('file', blob, 'resume.pdf');
 
-      await axios.post('http://localhost:4000/upload', formData, {
+      await axios.post('https://resume-builder-r4hm.onrender.com/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 
       // Delete the original resume from the server
-      await axios.delete('http://localhost:4000/delete');
+      await axios.delete('https://resume-builder-r4hm.onrender.com/delete');
 
       // Navigate to the next page
       navigate('/')

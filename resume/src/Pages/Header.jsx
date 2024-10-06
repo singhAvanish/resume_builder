@@ -122,7 +122,7 @@ const Header = () => {
       const uploadFormData = new FormData();
       uploadFormData.append('file', blob, 'resume.pdf');
   
-      const response = await axios.post('http://localhost:4000/upload', uploadFormData, {
+      const response = await axios.post('https://resume-builder-r4hm.onrender.com/upload', uploadFormData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

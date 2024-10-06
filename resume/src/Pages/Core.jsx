@@ -27,7 +27,7 @@ const Core = () => {
 
   const handleAddTextToPDF = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/public/resume.pdf', {
+      const response = await axios.get('https://resume-builder-r4hm.onrender.com/public/resume.pdf', {
         responseType: 'arraybuffer',
       });
       const existingPdfBytes = response.data;
@@ -92,7 +92,7 @@ const Core = () => {
       const formData = new FormData();
       formData.append('file', blob, 'updated_resume.pdf');
 
-      await axios.post('http://localhost:4000/upload', formData, {
+      await axios.post('https://resume-builder-r4hm.onrender.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
