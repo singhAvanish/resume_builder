@@ -1,0 +1,63 @@
+/* certification.css */
+
+/* General page styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+  }
+  
+  .container-certification {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  button:last-child {
+    background-color: #e74c3c;
+  }
+  
+  button:last-child:hover {
+    background-color: #c0392b;
+  }
+  

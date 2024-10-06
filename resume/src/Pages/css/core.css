@@ -1,0 +1,88 @@
+/* coreCompetency.css */
+
+/* General page styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  line-height: 1.6;
+}
+
+.container-core {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-core-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Skill input section styling */
+.skill-input-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.skill-label,
+.tech-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.skill-input,
+.tech-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Add More Skills Button */
+.add-more-button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 16px;
+  color: white;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.add-more-button:hover {
+  background-color: #2980b9;
+}
+
+/* Add Core Competency to PDF Button */
+.add-core-button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 16px;
+  color: white;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-core-button:hover {
+  background-color: #229954;
+}

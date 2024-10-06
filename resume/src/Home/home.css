@@ -1,0 +1,88 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .create-resume-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-resume-btn:hover {
+    background-color: #218838;
+  }
+  
+  .features, .steps {
+    text-align: left;
+    margin-top: 20px;
+    max-width: 800px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  ul, ol {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  ul li, ol li {
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    color: #000;
+  }
+  
+  footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .features, .steps {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  
